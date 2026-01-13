@@ -1,12 +1,12 @@
-##name = input("Enter your name: ")
+# name = input("Enter your name: ")
 
-# Remove whitespace from str and capitalize user input and can put with the 1st line name function
-##name = name.strip().title()
+# #Remove whitespace from str and capitalize user input and can put with the 1st line name function
+# name = name.strip().title()
 
-#Split user name into first and last name
-##first, last = name.split(" ")
-
-##print("Hello " + name + ", welcome to the future")
+# #Split user name into first and last name
+# first, last = name.split(" ")
+ 
+# print("Hello " + name + ", welcome to the future")
 
 #def hello(to="world"):
 #    print("hello,", to)
@@ -55,3 +55,33 @@
 # print(meeting)
 
 #side effects
+# name = input("Enter your name: ")
+
+# def main():
+#     global name
+#     say("Is that you!")
+#     name = "Harry"
+#     say("Welcome back,")
+
+# def say(ask):
+#     print(ask + " " + name)
+
+# main()
+
+#string methods
+# Movies = [ "Interstellar",
+#            "   Inception",
+#            "The Dark Knight", 
+#            "Tenet",
+#            " The Prestige",
+#            "Oppenheimer",
+#           ]
+
+# def main():
+#     cleaned_movies = []
+#     for movie in Movies:
+#         cleaned_movies.append(movie.strip().title())
+
+#     print(', '.join(cleaned_movies))
+
+# main()
