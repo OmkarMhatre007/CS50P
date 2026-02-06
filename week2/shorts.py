@@ -146,3 +146,36 @@
 
 # main()
 
+##Tuples: If the values are fix then use tuple
+# import sys
+
+# def main():
+#     #coordinates = (42.376, -71.115)
+#     # latitude, longitude = coordinates
+#     # print(f"Latitude: {latitude}")
+#     # print(f"Longitude: {longitude}")
+#     coordinate_tuple = (42.376, -71.115)
+#     coordinate_list = [42.376, -71.115]
+#     print(f"{sys.getsizeof(coordinate_tuple)} bytes")
+#     print(f"{sys.getsizeof(coordinate_list)} bytes")
+
+# main()
+
+##While Loops
+# from soil import sample
+
+# def main():
+#     moisture = sample()
+#     days = 0
+#     print(f"Day {days}: Soil moisture: {moisture}%")
+
+#     while moisture > 20:
+#         moisture = sample()
+#         days += 1
+#         print(f"Soil moisture: {moisture}%")
+
+#     print("Time to water the plant!")
+
+# main()
+
+
