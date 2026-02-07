@@ -1,8 +1,8 @@
 #while
-# i = 3 
-# while i != 0:
-#     print("meow")
-#     i = i - 1
+i = 3 
+while i != 0:
+    print("meow")
+    i = i - 1
 # or  i += 1
 
 #for
@@ -90,13 +90,13 @@
 #     print("?" * width)
 # main()
 
-def main():
-    print_square(3)
+# def main():
+#     print_square(3)
 
-def print_square(size):
-    for i in range(size):
-        for j in range(size):
-            print("#", end="")
-        print()
+# def print_square(size):
+#     for i in range(size):
+#         for j in range(size):
+#             print("#", end="")
+#         print()
 
-main()
+# main()
