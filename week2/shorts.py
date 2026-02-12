@@ -40,31 +40,31 @@
 # main()
 
 ##Dictionary Methods
-#WORDS = {"PAIR": 4, "HAIR": 4, "CHAIR": 5, "GRAPHIC": 7}
+WORDS = {"PAIR": 4, "HAIR": 4, "CHAIR": 5, "GRAPHIC": 7}
 
-# def main():
-#     print("Welcome to Spelling Bee!")
-    # print("Yours letters are: A I P C R H G")
+def main():
+    print("Welcome to Spelling Bee!")
+    print("Yours letters are: A I P C R H G")
 
-    # while len(WORDS) > 0:
-    #     print(f"{len(WORDS)} words left!")
-    #     guess = input("Guess a word: ").upper()
+    while len(WORDS) > 0:
+        print(f"{len(WORDS)} words left!")
+        guess = input("Guess a word: ").upper()
 
-    #     if guess == "GRAPHIC":
-    #         WORDS.clear()
-    #         print("You've won!")
-    #     if guess in WORDS.keys():
-    #         points = WORDS.pop(guess)
-    #         print(f"Good job! You scored {points} points.")
+        if guess == "GRAPHIC":
+            WORDS.clear()
+            print("You've won!")
+        if guess in WORDS.keys():
+            points = WORDS.pop(guess)
+            print(f"Good job! You scored {points} points.")
 
-    # print("That's the game!")
+    print("That's the game!")
 
 # def main():
 #     print("Welcome to Spelling Bee!")
 #     for word, point in WORDS.items():
 #         print(f"{word} was worth {point} points.")
 
-# main()
+main()
 
 ##For Loops
 # def main():
