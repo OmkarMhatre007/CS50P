@@ -5,7 +5,6 @@ def main():
     else:
         print("Invalid")
 
-
 def is_valid(plate):
     min_len = 2
     max_len = 6
@@ -23,4 +22,5 @@ def is_valid(plate):
             return plate[i:].isdigit()
     return True
     
-main()
+if __name__ == "__main__":
+    main()
