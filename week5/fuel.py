@@ -1,16 +1,19 @@
 def main():
-    try:
+    while True:
         fraction = input("Fraction:")
-        print(gauge(convert(fraction)))
-        
-    except (ValueError, ZeroDivisionError):
-        pass
+        try:
+            print(gauge(convert(fraction)))
+            break
+        except (ValueError, ZeroDivisionError):
+            continue
 
 def convert(fraction):
-        num, den = fraction.split("/")
-        num = int(num)
-        den = int(den)
-
+        try:
+            num, den = fraction.split("/")
+            num = int(num)
+            den = int(den)
+        except (ValueError, ZeroDivisionError):
+            raise ValueError
         if den == 0:
             raise ZeroDivisionError
         if num < 0 or den < 0:
@@ -19,7 +22,7 @@ def convert(fraction):
             raise ValueError
         percentage = round((num/den) * 100)
         return percentage
-    
+
 def gauge(percentage):
     if percentage <= 1:
         return "E"
@@ -30,5 +33,3 @@ def gauge(percentage):
 
 if __name__ == "__main__":
     main()
-
-# algorithm
