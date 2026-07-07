@@ -8,8 +8,8 @@
 # with open("name.txt", "r") as file:
 #      lines = file.readlines()
 
-#  for line in lines:
-#      print("hello,", line.strip())
+# for line in lines:
+#     print("hello,", line.strip())
 
 ## with open("name.txt", "r") as file:
 #       for line in file:
