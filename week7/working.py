@@ -6,10 +6,10 @@ def main():
 def convert(s):
     check = re.search(r"^(\d{1,2})(\:)?(\d{1,2})? (AM|PM) to (\d{1,2})(\:)?(\d{1,2})? (AM|PM)$", s, re.IGNORECASE)
     hours1 = int(check.group(1)) 
-    minutes1 = int(check.group(3)) 
+    minutes1 = int(check.group(3) or 0) 
     am_pm1 = (check.group(4))
     hours2 = int(check.group(5)) 
-    minutes2 = int(check.group(7)) 
+    minutes2 = int(check.group(7) or 0) 
     am_pm2 = (check.group(8))
     if check:
         if hours1 == None or hours2 == None:
