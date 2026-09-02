@@ -18,4 +18,4 @@ def test_multiple_um():
 
 def test_ignore_case():
     assert count("Um, thank you") == 1
-    assert count("UM, I was going to go to the grocery store, but, um, I completely forgot my wallet at home.") == 2
+    assert count("UM, I was going to the grocery store, but, um, I completely forgot my wallet at home.") == 2
