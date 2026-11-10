@@ -100,7 +100,11 @@ def load_portfolio(filepath="portfolio.csv"):
                     tickers.append(STOCK_MAP[name])
                     shares.append(qty)
                 else:
-                    print(f"Notice: '{row[0].strip()}' is not in the recognized stock list.")
+                    # print(f"Notice: '{row[0].strip()}' is not in the recognized stock list.")
+                    ticker = row[0].strip().upper()
+                    stock_names.append(name)
+                    tickers.append(ticker)
+                    shares.append(qty)
 
     if not tickers:
         raise ValueError("No valid stocks found in portfolio file")
